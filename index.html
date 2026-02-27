@@ -21,18 +21,20 @@
             font-family: 'Open Sans', sans-serif;
             background: white;
             color: #2c3e50;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .page {
             width: 8.5in;
             height: 11in;
-            padding: 0.5in 0.6in;
+            padding: 0.5in 0.65in;
             background: white;
             position: relative;
             page-break-after: always;
             margin: 0 auto;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
         }
 
         /* Header with Logo */
@@ -40,9 +42,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 12px;
+            padding-bottom: 15px;
             border-bottom: 4px solid #0052CC;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
 
         .logo-section {
@@ -58,30 +60,30 @@
 
         .company-name {
             font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 800;
             color: #0052CC;
             line-height: 1.2;
         }
 
         .company-tagline {
-            font-size: 9px;
+            font-size: 10px;
             color: #666;
             margin-top: 2px;
         }
 
         .cert-badges {
             text-align: right;
-            font-size: 9px;
+            font-size: 10px;
             font-weight: 600;
             color: #0052CC;
         }
 
         .cert-badges div {
             background: #f0f4ff;
-            padding: 3px 10px;
+            padding: 4px 12px;
             border-radius: 12px;
-            margin-bottom: 3px;
+            margin-bottom: 4px;
             display: inline-block;
         }
 
@@ -89,21 +91,22 @@
         .title-section {
             background: linear-gradient(135deg, #0052CC 0%, #0066FF 100%);
             color: white;
-            padding: 14px 20px;
-            margin-bottom: 16px;
-            border-radius: 6px;
+            padding: 18px 24px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 82, 204, 0.2);
         }
 
         .main-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 800;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             letter-spacing: -0.5px;
         }
 
         .subtitle {
-            font-size: 11px;
+            font-size: 12px;
             opacity: 0.95;
             font-weight: 400;
         }
@@ -112,16 +115,16 @@
         .info-bar {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
-            margin-bottom: 16px;
-            font-size: 8.5px;
+            gap: 10px;
+            margin-bottom: 18px;
+            font-size: 9px;
         }
 
         .info-item {
             background: #f8f9fa;
-            padding: 8px 10px;
+            padding: 10px 12px;
             border-left: 3px solid #FF6B35;
-            border-radius: 3px;
+            border-radius: 4px;
         }
 
         .info-label {
@@ -129,33 +132,34 @@
             color: #0052CC;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
 
         .info-value {
             color: #2c3e50;
             font-weight: 600;
+            font-size: 9.5px;
         }
 
         /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 18px;
-            margin-bottom: 16px;
+            gap: 20px;
+            margin-bottom: 18px;
         }
 
         .section {
-            margin-bottom: 14px;
+            margin-bottom: 16px;
         }
 
         .section-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 700;
             color: #0052CC;
-            margin-bottom: 8px;
-            padding-bottom: 4px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
             border-bottom: 2px solid #FF6B35;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -170,43 +174,48 @@
 
         .capability-item {
             background: #f8f9fa;
-            padding: 10px;
-            border-radius: 4px;
+            padding: 12px;
+            border-radius: 5px;
             border-left: 3px solid #0052CC;
+            transition: transform 0.2s;
+        }
+
+        .capability-item:hover {
+            transform: translateX(2px);
         }
 
         .capability-title {
             font-weight: 700;
-            font-size: 9.5px;
+            font-size: 10px;
             color: #0052CC;
-            margin-bottom: 3px;
+            margin-bottom: 4px;
         }
 
         .capability-desc {
-            font-size: 8px;
+            font-size: 8.5px;
             color: #555;
-            line-height: 1.3;
+            line-height: 1.4;
         }
 
         /* Stats */
         .stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
-            margin: 12px 0;
+            gap: 10px;
+            margin: 14px 0;
         }
 
         .stat {
             text-align: center;
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 10px 5px;
-            border-radius: 6px;
+            padding: 12px 8px;
+            border-radius: 8px;
             border-top: 3px solid #FF6B35;
         }
 
         .stat-number {
             font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 800;
             color: #0052CC;
             display: block;
@@ -214,26 +223,27 @@
         }
 
         .stat-label {
-            font-size: 7.5px;
+            font-size: 8px;
             color: #666;
             font-weight: 600;
-            margin-top: 3px;
+            margin-top: 4px;
             text-transform: uppercase;
+            letter-spacing: 0.3px;
         }
 
         /* Tech Tags */
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 6px;
         }
 
         .tech-tag {
             background: #0052CC;
             color: white;
-            padding: 4px 8px;
-            border-radius: 3px;
-            font-size: 7.5px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 8px;
             font-weight: 600;
         }
 
@@ -242,118 +252,74 @@
             background: white;
             border: 1px solid #e0e0e0;
             border-left: 4px solid #FF6B35;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .project-header {
             display: flex;
             justify-content: space-between;
             align-items: start;
-            margin-bottom: 5px;
-            gap: 8px;
+            margin-bottom: 6px;
+            gap: 10px;
         }
 
         .project-title {
             font-weight: 700;
-            font-size: 9.5px;
+            font-size: 10px;
             color: #0052CC;
             flex: 1;
+            line-height: 1.3;
         }
 
         .project-agency {
             background: #0052CC;
             color: white;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 7.5px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 8px;
             font-weight: 700;
             white-space: nowrap;
         }
 
         .project-details {
-            font-size: 8px;
+            font-size: 8.5px;
             color: #555;
-            line-height: 1.4;
-            margin-bottom: 4px;
+            line-height: 1.5;
+            margin-bottom: 5px;
         }
 
         .project-value {
-            font-size: 7.5px;
+            font-size: 8px;
             color: #FF6B35;
             font-weight: 700;
-        }
-
-        .page-two .section {
-            margin-bottom: 10px;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-        }
-
-        .page-two .project {
-            margin-bottom: 0;
-            padding: 8px;
-            border-radius: 5px;
-            min-height: 170px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0 1px 4px rgba(0, 82, 204, 0.08);
-        }
-
-        .page-two .project.featured {
-            grid-column: span 2;
-            min-height: auto;
-        }
-
-        .page-two .project-title {
-            font-size: 9px;
-            line-height: 1.25;
-        }
-
-        .page-two .project-details {
-            font-size: 7.5px;
-            line-height: 1.3;
-            margin-bottom: 3px;
-        }
-
-        .project-highlights {
-            margin: 3px 0 4px 14px;
-            font-size: 7.3px;
-            color: #555;
-        }
-
-        .project-highlights li {
-            margin-bottom: 2px;
-            line-height: 1.25;
+            margin-top: 6px;
         }
 
         /* Lists */
         ul {
-            margin-left: 15px;
-            font-size: 8.5px;
+            margin-left: 16px;
+            font-size: 9px;
             color: #555;
         }
 
         ul li {
-            margin-bottom: 3px;
-            line-height: 1.3;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+        ul li strong {
+            color: #0052CC;
         }
 
         /* Footer */
         .footer {
-            position: absolute;
-            bottom: 0.4in;
-            left: 0.6in;
-            right: 0.6in;
-            padding-top: 8px;
+            margin-top: auto;
+            padding-top: 12px;
             border-top: 2px solid #0052CC;
-            font-size: 8px;
+            font-size: 8.5px;
             color: #666;
             text-align: center;
         }
@@ -366,9 +332,10 @@
         .highlight-box {
             background: linear-gradient(135deg, #fff5f0 0%, #ffe8df 100%);
             border: 2px solid #FF6B35;
-            border-radius: 6px;
-            padding: 12px;
-            margin: 12px 0;
+            border-radius: 8px;
+            padding: 14px;
+            margin: 14px 0;
+            box-shadow: 0 2px 4px rgba(255, 107, 53, 0.1);
         }
 
         .highlight-title {
@@ -376,13 +343,20 @@
             font-size: 11px;
             font-weight: 700;
             color: #FF6B35;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .highlight-content {
-            font-size: 8.5px;
+            font-size: 9px;
             color: #555;
-            line-height: 1.4;
+            line-height: 1.5;
+        }
+
+        /* Content wrapper for page 1 */
+        .page-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Print Optimization */
@@ -396,6 +370,10 @@
                 box-shadow: none;
                 page-break-after: always;
             }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
         }
 
         /* Screen view */
@@ -404,6 +382,11 @@
                 background: #e9ecef;
                 padding: 20px 0;
             }
+        }
+
+        /* Page 2 specific adjustments */
+        .projects-section {
+            flex: 1;
         }
     </style>
 </head>
@@ -421,127 +404,129 @@
             </div>
         </div>
 
-        <!-- Title -->
-        <div class="title-section">
-            <div class="main-title">AGILE DELIVERY & PROGRAM MANAGEMENT</div>
-            <div class="subtitle">Excellence in Iterative Development, Strategic Leadership & Mission-Critical Project Execution</div>
-        </div>
+        <div class="page-content">
+            <!-- Title -->
+            <div class="title-section">
+                <div class="main-title">AGILE DELIVERY & PROGRAM MANAGEMENT</div>
+                <div class="subtitle">Excellence in Iterative Development, Strategic Leadership & Mission-Critical Project Execution</div>
+            </div>
 
-        <!-- Company Info Bar -->
-        <div class="info-bar">
-            <div class="info-item">
-                <div class="info-label">CAGE Code</div>
-                <div class="info-value">7MFP4</div>
+            <!-- Company Info Bar -->
+            <div class="info-bar">
+                <div class="info-item">
+                    <div class="info-label">CAGE Code</div>
+                    <div class="info-value">7MFP4</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">DUNS</div>
+                    <div class="info-value">080448437</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">UEI</div>
+                    <div class="info-value">KFF3SVYAQAG3</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">NAICS Codes</div>
+                    <div class="info-value">541511, 541512, 541519</div>
+                </div>
             </div>
-            <div class="info-item">
-                <div class="info-label">DUNS</div>
-                <div class="info-value">080448437</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">UEI</div>
-                <div class="info-value">KFF3SVYAQAG3</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">NAICS Codes</div>
-                <div class="info-value">541511, 541512, 541519</div>
-            </div>
-        </div>
 
-        <!-- Two Column Layout -->
-        <div class="two-column">
-            <!-- Left Column -->
-            <div>
-                <div class="section">
-                    <div class="section-title">Core Capabilities</div>
-                    <div class="capabilities">
-                        <div class="capability-item">
-                            <div class="capability-title">Agile Scrum</div>
-                            <div class="capability-desc">Two-week sprint cycles, backlog grooming, continuous delivery</div>
+            <!-- Two Column Layout -->
+            <div class="two-column">
+                <!-- Left Column -->
+                <div>
+                    <div class="section">
+                        <div class="section-title">Core Capabilities</div>
+                        <div class="capabilities">
+                            <div class="capability-item">
+                                <div class="capability-title">Agile Scrum</div>
+                                <div class="capability-desc">Two-week sprint cycles, backlog grooming, continuous delivery</div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-title">Portfolio Governance</div>
+                                <div class="capability-desc">CPIC, TBM frameworks, performance assessments</div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-title">DevOps/CI-CD</div>
+                                <div class="capability-desc">Azure DevOps, automated pipelines, IaC</div>
+                            </div>
+                            <div class="capability-item">
+                                <div class="capability-title">Quality Management</div>
+                                <div class="capability-desc">ISO 9001:2015, CMMI Level III certified</div>
+                            </div>
                         </div>
-                        <div class="capability-item">
-                            <div class="capability-title">Portfolio Governance</div>
-                            <div class="capability-desc">CPIC, TBM frameworks, performance assessments</div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">Performance Metrics</div>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">26+</span>
+                                <span class="stat-label">Active Contracts</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">SLA Compliance</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">$50M+</span>
+                                <span class="stat-label">Total Value</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">On-Time</span>
+                            </div>
                         </div>
-                        <div class="capability-item">
-                            <div class="capability-title">DevOps/CI-CD</div>
-                            <div class="capability-desc">Azure DevOps, automated pipelines, IaC</div>
-                        </div>
-                        <div class="capability-item">
-                            <div class="capability-title">Quality Management</div>
-                            <div class="capability-desc">ISO 9001:2015, CMMI Level III certified</div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title">Methodologies & Tools</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Agile Scrum</span>
+                            <span class="tech-tag">Kanban</span>
+                            <span class="tech-tag">SAFe</span>
+                            <span class="tech-tag">Azure DevOps</span>
+                            <span class="tech-tag">JIRA</span>
+                            <span class="tech-tag">Confluence</span>
+                            <span class="tech-tag">MS Project</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">EVM</span>
+                            <span class="tech-tag">PMBOK</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="section">
-                    <div class="section-title">Performance Metrics</div>
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="stat-number">26+</span>
-                            <span class="stat-label">Active Contracts</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">SLA Compliance</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">$50M+</span>
-                            <span class="stat-label">Total Value</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">On-Time</span>
+                <!-- Right Column -->
+                <div>
+                    <div class="section">
+                        <div class="section-title">Key Differentiators</div>
+                        <ul>
+                            <li><strong>Certified Excellence:</strong> ISO 9001:2015 QMS & CMMI Level III ensure consistent quality</li>
+                            <li><strong>Federal Expertise:</strong> Deep knowledge of EPLC, FISMA, NIST 800-53, FAR compliance</li>
+                            <li><strong>Seamless Transitions:</strong> 100% incumbent retention, zero-downtime onboarding</li>
+                            <li><strong>Transparent Reporting:</strong> Real-time dashboards, automated metrics, weekly status</li>
+                            <li><strong>Proven at Scale:</strong> Managing 90+ FTE teams, $88M+ task orders under IDIQs</li>
+                            <li><strong>Risk Management:</strong> Proactive identification, mitigation strategies, issue resolution</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box">
+                        <div class="highlight-title">🏆 Program Management Excellence</div>
+                        <div class="highlight-content">
+                            Sara has successfully transitioned multiple large-scale federal contracts with 100% staff retention. Our Staffing Excellence Framework (SEF) ensures Day 1 readiness with comprehensive knowledge transfer, minimal oversight requirements, and self-organizing cross-functional teams.
                         </div>
                     </div>
-                </div>
 
-                <div class="section">
-                    <div class="section-title">Methodologies & Tools</div>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Agile Scrum</span>
-                        <span class="tech-tag">Kanban</span>
-                        <span class="tech-tag">SAFe</span>
-                        <span class="tech-tag">Azure DevOps</span>
-                        <span class="tech-tag">JIRA</span>
-                        <span class="tech-tag">Confluence</span>
-                        <span class="tech-tag">MS Project</span>
-                        <span class="tech-tag">Tableau</span>
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">EVM</span>
-                        <span class="tech-tag">PMBOK</span>
+                    <div class="section">
+                        <div class="section-title">Delivery Approach</div>
+                        <ul>
+                            <li><strong>Agile at Core:</strong> Iterative 2-week sprints, daily standups, sprint reviews</li>
+                            <li><strong>Stakeholder Focus:</strong> Continuous collaboration, demos, feedback integration</li>
+                            <li><strong>Quality Built-In:</strong> Automated testing, peer reviews, continuous improvement</li>
+                            <li><strong>Value-Driven:</strong> Business outcome focus, ROI tracking, benefit realization</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-
-            <!-- Right Column -->
-            <div>
-                <div class="section">
-                    <div class="section-title">Key Differentiators</div>
-                    <ul>
-                        <li><strong>Certified Excellence:</strong> ISO 9001:2015 QMS & CMMI Level III ensure consistent quality</li>
-                        <li><strong>Federal Expertise:</strong> Deep knowledge of EPLC, FISMA, NIST 800-53, FAR compliance</li>
-                        <li><strong>Seamless Transitions:</strong> 100% incumbent retention, zero-downtime onboarding</li>
-                        <li><strong>Transparent Reporting:</strong> Real-time dashboards, automated metrics, weekly status</li>
-                        <li><strong>Proven at Scale:</strong> Managing 90+ FTE teams, $88M+ task orders under IDIQs</li>
-                        <li><strong>Risk Management:</strong> Proactive identification, mitigation strategies, issue resolution</li>
-                    </ul>
-                </div>
-
-                <div class="highlight-box">
-                    <div class="highlight-title">🏆 Program Management Excellence</div>
-                    <div class="highlight-content">
-                        Sara has successfully transitioned multiple large-scale federal contracts with 100% staff retention. Our Staffing Excellence Framework (SEF) ensures Day 1 readiness with comprehensive knowledge transfer, minimal oversight requirements, and self-organizing cross-functional teams.
-                    </div>
-                </div>
-
-                <div class="section">
-                    <div class="section-title">Delivery Approach</div>
-                    <ul>
-                        <li><strong>Agile at Core:</strong> Iterative 2-week sprints, daily standups, sprint reviews</li>
-                        <li><strong>Stakeholder Focus:</strong> Continuous collaboration, demos, feedback integration</li>
-                        <li><strong>Quality Built-In:</strong> Automated testing, peer reviews, continuous improvement</li>
-                        <li><strong>Value-Driven:</strong> Business outcome focus, ROI tracking, benefit realization</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -554,7 +539,7 @@
     </div>
 
     <!-- PAGE 2 -->
-    <div class="page page-two">
+    <div class="page">
         <!-- Header -->
         <div class="header">
             <div class="logo-section">
@@ -565,95 +550,76 @@
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Representative Contract Experience</div>
-            <div class="projects-grid">
-                <div class="project featured">
-                    <div>
-                        <div class="project-header">
-                            <div class="project-title">USDA AMS Organic Integrity Database (OID) Modernization</div>
-                            <span class="project-agency">USDA</span>
-                        </div>
-                        <div class="project-details">
-                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639522A007 (BPA) | <strong>Period:</strong> 01/2022-01/2027
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Completed .NET 5 to .NET 6 Azure modernization in under 11 months.</li>
-                            <li>Delivered Trade Partner and Import Certificates modules ahead of schedule.</li>
-                            <li>Maintained 100% quality with UAT + Section 508 compliance validation.</li>
-                        </ul>
-                    </div>
-                    <div class="project-value">BPA Value: $3,500,000 | Call Orders: $3,075,762 (FFP)</div>
-                </div>
-
+        <div class="projects-section">
+            <div class="section">
+                <div class="section-title">Representative Contract Experience</div>
+                
                 <div class="project">
-                    <div>
-                        <div class="project-header">
-                            <div class="project-title">SBA OCIO Service Delivery & ITIL Transformation Support</div>
-                            <span class="project-agency">SBA</span>
-                        </div>
-                        <div class="project-details">
-                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 73351021P0039 | <strong>Period:</strong> 09/2021-09/2025
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Implemented CPIC/TBM governance and program health assessments.</li>
-                            <li>Enabled leadership dashboards and Exhibit 300/53 reporting support.</li>
-                            <li>Improved portfolio transparency and performance outcomes.</li>
-                        </ul>
+                    <div class="project-header">
+                        <div class="project-title">HHS-ASPR ServiceNow HR Modules Development & O&M</div>
+                        <span class="project-agency">HHS</span>
                     </div>
-                    <div class="project-value">Contract Value: $3,614,107 (FFP)</div>
-                </div>
-
-                <div class="project">
-                    <div>
-                        <div class="project-header">
-                            <div class="project-title">USDA APHIS IPHIS & eTRAP System Operations</div>
-                            <span class="project-agency">USDA</span>
-                        </div>
-                        <div class="project-details">
-                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639523C0023 | <strong>Period:</strong> 01/2023-01/2026
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Managed mission-critical operations for 10,000+ stakeholders.</li>
-                            <li>Standardized Agile ceremonies, CCB workflows, and risk oversight.</li>
-                            <li>Migrated backlog from JIRA to Azure DevOps to reduce costs.</li>
-                        </ul>
+                    <div class="project-details">
+                        <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 47QTCA18D00D6 / 75A50224F80006 | <strong>Period:</strong> 03/2024-03/2025
                     </div>
-                    <div class="project-value">Contract Value: $3,432,840 (FFP)</div>
-                </div>
-
-                <div class="project">
-                    <div>
-                        <div class="project-header">
-                            <div class="project-title">HHS-ASPR ServiceNow HR Modules Development & O&M</div>
-                            <span class="project-agency">HHS</span>
-                        </div>
-                        <div class="project-details">
-                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 47QTCA18D00D6 / 75A50224F80006 | <strong>Period:</strong> 03/2024-03/2025
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Delivered two-week sprint development and O&M for HR modules.</li>
-                            <li>Integrated EHCM, BIIS, and USA Staffing with secure workflows.</li>
-                            <li>Met SLA commitments with patching, updates, and support readiness.</li>
-                        </ul>
+                    <div class="project-details">
+                        Led Agile Scrum methodology with two-week sprints for ServiceNow HR module development, enhancement, and O&M. Managed requirements analysis, workflow development, system configuration, and data migration from SROC to ServiceNow platform. Integrated with EHCM, BIIS, and USA Staffing systems. Delivered comprehensive sprint demonstrations, training curriculum, and knowledge transfer. Provided O&M support with security patching, scheduled updates, and issue resolution meeting strict SLAs.
                     </div>
                     <div class="project-value">Contract Value: $528,720 (FFP)</div>
                 </div>
 
                 <div class="project">
-                    <div>
-                        <div class="project-header">
-                            <div class="project-title">HHS IHS ServiceNow Development & Support</div>
-                            <span class="project-agency">HHS</span>
-                        </div>
-                        <div class="project-details">
-                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 75P00123C00053 | <strong>Period:</strong> 09/2023-09/2028
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Executed Agile HRSD enhancements through consistent sprint cadence.</li>
-                            <li>Maintained weekly risk, velocity, and status reporting discipline.</li>
-                            <li>Aligned backlog and design activities with HHS EPLC standards.</li>
-                        </ul>
+                    <div class="project-header">
+                        <div class="project-title">SBA OCIO Service Delivery & ITIL Transformation Support</div>
+                        <span class="project-agency">SBA</span>
+                    </div>
+                    <div class="project-details">
+                        <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 73351021P0039 | <strong>Period:</strong> 09/2021-09/2025
+                    </div>
+                    <div class="project-details">
+                        Provided strategic IT portfolio governance, CPIC implementation, and performance management for SBA OCIO. Conducted Program Health Assessments (PHAs) and Operational Assessments (OAs) to optimize IT investments. Developed real-time dashboards and reporting tools for leadership decision-making. Implemented Technology Business Management (TBM) practices for financial transparency. Delivered training for Program Managers on OMB Exhibit 300/53 reporting.
+                    </div>
+                    <div class="project-value">Contract Value: $3,614,107 (FFP)</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">USDA AMS Organic Integrity Database (OID) Modernization</div>
+                        <span class="project-agency">USDA</span>
+                    </div>
+                    <div class="project-details">
+                        <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639522A007 (BPA) | <strong>Period:</strong> 01/2022-01/2027
+                    </div>
+                    <div class="project-details">
+                        Managed Agile development with comprehensive Integrated Master Schedule (IMS) tracking, sprint planning, and Earned Value Management (EVM) reporting. Completed OID modernization (.NET 5 to .NET 6 on Azure) in under 11 months. Delivered Trade Partner Module and Import Certificates Module ahead of schedule. Utilized Azure DevOps for version control, automated builds, and CI/CD pipelines. Achieved 100% quality standards through rigorous UAT and 508 compliance testing.
+                    </div>
+                    <div class="project-value">BPA Value: $3,500,000 | Call Orders: $3,075,762 (FFP)</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">USDA APHIS IPHIS & eTRAP System Operations</div>
+                        <span class="project-agency">USDA</span>
+                    </div>
+                    <div class="project-details">
+                        <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639523C0023 | <strong>Period:</strong> 01/2023-01/2026
+                    </div>
+                    <div class="project-details">
+                        Program management for mission-critical plant health information systems supporting 10,000+ stakeholders. Implemented Agile Scrum methodologies with regular sprint reviews and retrospectives. Managed Azure DevOps pipelines for automated builds and deployments. Coordinated Configuration Control Board activities ensuring stakeholder alignment. Maintained detailed schedules with timely stakeholder updates.
+                    </div>
+                    <div class="project-value">Contract Value: $3,432,840 (FFP)</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">HHS IHS ServiceNow Development & Support</div>
+                        <span class="project-agency">HHS</span>
+                    </div>
+                    <div class="project-details">
+                        <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 75P00123C00053 | <strong>Period:</strong> 09/2023-09/2028
+                    </div>
+                    <div class="project-details">
+                        Executed Agile development for ServiceNow HRSD module enhancement with consistent 2-week sprints. Managed project coordination through regular status meetings with OAPS PM, IHS PM, and COR. Conducted kick-off meetings, developed risk logs, and provided weekly updates. Delivered sprint demonstrations and product feature showcases. Maintained comprehensive progress reports including risk mitigation strategies, burndown charts, and velocity metrics.
                     </div>
                     <div class="project-value">Contract Value: $1,914,380 (Hybrid FFP/T&M)</div>
                 </div>
