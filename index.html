@@ -285,6 +285,54 @@
             font-weight: 700;
         }
 
+        .page-two .section {
+            margin-bottom: 10px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .page-two .project {
+            margin-bottom: 0;
+            padding: 8px;
+            border-radius: 5px;
+            min-height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 1px 4px rgba(0, 82, 204, 0.08);
+        }
+
+        .page-two .project.featured {
+            grid-column: span 2;
+            min-height: auto;
+        }
+
+        .page-two .project-title {
+            font-size: 9px;
+            line-height: 1.25;
+        }
+
+        .page-two .project-details {
+            font-size: 7.5px;
+            line-height: 1.3;
+            margin-bottom: 3px;
+        }
+
+        .project-highlights {
+            margin: 3px 0 4px 14px;
+            font-size: 7.3px;
+            color: #555;
+        }
+
+        .project-highlights li {
+            margin-bottom: 2px;
+            line-height: 1.25;
+        }
+
         /* Lists */
         ul {
             margin-left: 15px;
@@ -506,7 +554,7 @@
     </div>
 
     <!-- PAGE 2 -->
-    <div class="page">
+    <div class="page page-two">
         <!-- Header -->
         <div class="header">
             <div class="logo-section">
@@ -519,75 +567,96 @@
 
         <div class="section">
             <div class="section-title">Representative Contract Experience</div>
-            
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">HHS-ASPR ServiceNow HR Modules Development & O&M</div>
-                    <span class="project-agency">HHS</span>
+            <div class="projects-grid">
+                <div class="project featured">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-title">USDA AMS Organic Integrity Database (OID) Modernization</div>
+                            <span class="project-agency">USDA</span>
+                        </div>
+                        <div class="project-details">
+                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639522A007 (BPA) | <strong>Period:</strong> 01/2022-01/2027
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Completed .NET 5 to .NET 6 Azure modernization in under 11 months.</li>
+                            <li>Delivered Trade Partner and Import Certificates modules ahead of schedule.</li>
+                            <li>Maintained 100% quality with UAT + Section 508 compliance validation.</li>
+                        </ul>
+                    </div>
+                    <div class="project-value">BPA Value: $3,500,000 | Call Orders: $3,075,762 (FFP)</div>
                 </div>
-                <div class="project-details">
-                    <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 47QTCA18D00D6 / 75A50224F80006 | <strong>Period:</strong> 03/2024-03/2025
-                </div>
-                <div class="project-details">
-                    Led Agile Scrum methodology with two-week sprints for ServiceNow HR module development, enhancement, and O&M. Managed requirements analysis, workflow development, system configuration, and data migration from SROC to ServiceNow platform. Integrated with EHCM, BIIS, and USA Staffing systems. Delivered comprehensive sprint demonstrations, training curriculum, and knowledge transfer. Provided O&M support with security patching, scheduled updates, and issue resolution meeting strict SLAs.
-                </div>
-                <div class="project-value">Contract Value: $528,720 (FFP)</div>
-            </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">SBA OCIO Service Delivery & ITIL Transformation Support</div>
-                    <span class="project-agency">SBA</span>
+                <div class="project">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-title">SBA OCIO Service Delivery & ITIL Transformation Support</div>
+                            <span class="project-agency">SBA</span>
+                        </div>
+                        <div class="project-details">
+                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 73351021P0039 | <strong>Period:</strong> 09/2021-09/2025
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Implemented CPIC/TBM governance and program health assessments.</li>
+                            <li>Enabled leadership dashboards and Exhibit 300/53 reporting support.</li>
+                            <li>Improved portfolio transparency and performance outcomes.</li>
+                        </ul>
+                    </div>
+                    <div class="project-value">Contract Value: $3,614,107 (FFP)</div>
                 </div>
-                <div class="project-details">
-                    <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 73351021P0039 | <strong>Period:</strong> 09/2021-09/2025
-                </div>
-                <div class="project-details">
-                    Provided strategic IT portfolio governance, CPIC implementation, and performance management for SBA OCIO. Conducted Program Health Assessments (PHAs) and Operational Assessments (OAs) to optimize IT investments. Developed real-time dashboards and reporting tools for leadership decision-making. Implemented Technology Business Management (TBM) practices for financial transparency. Delivered training for Program Managers on OMB Exhibit 300/53 reporting. Facilitated business process improvements and mentor-coaching programs for leadership development.
-                </div>
-                <div class="project-value">Contract Value: $3,614,107 (FFP)</div>
-            </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">USDA AMS Organic Integrity Database (OID) Modernization</div>
-                    <span class="project-agency">USDA</span>
+                <div class="project">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-title">USDA APHIS IPHIS & eTRAP System Operations</div>
+                            <span class="project-agency">USDA</span>
+                        </div>
+                        <div class="project-details">
+                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639523C0023 | <strong>Period:</strong> 01/2023-01/2026
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Managed mission-critical operations for 10,000+ stakeholders.</li>
+                            <li>Standardized Agile ceremonies, CCB workflows, and risk oversight.</li>
+                            <li>Migrated backlog from JIRA to Azure DevOps to reduce costs.</li>
+                        </ul>
+                    </div>
+                    <div class="project-value">Contract Value: $3,432,840 (FFP)</div>
                 </div>
-                <div class="project-details">
-                    <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639522A007 (BPA) | <strong>Period:</strong> 01/2022-01/2027
-                </div>
-                <div class="project-details">
-                    Managed Agile development with comprehensive Integrated Master Schedule (IMS) tracking, sprint planning, and Earned Value Management (EVM) reporting. Completed OID modernization (.NET 5 to .NET 6 on Azure) in under 11 months. Delivered Trade Partner Module and Import Certificates Module ahead of schedule. Utilized Azure DevOps for version control, automated builds, and CI/CD pipelines. Conducted weekly IMS updates, sprint demos, and stakeholder reviews. Achieved 100% quality standards through rigorous UAT and 508 compliance testing.
-                </div>
-                <div class="project-value">BPA Value: $3,500,000 | Call Orders: $3,075,762 (FFP)</div>
-            </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">USDA APHIS IPHIS & eTRAP System Operations</div>
-                    <span class="project-agency">USDA</span>
+                <div class="project">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-title">HHS-ASPR ServiceNow HR Modules Development & O&M</div>
+                            <span class="project-agency">HHS</span>
+                        </div>
+                        <div class="project-details">
+                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 47QTCA18D00D6 / 75A50224F80006 | <strong>Period:</strong> 03/2024-03/2025
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Delivered two-week sprint development and O&M for HR modules.</li>
+                            <li>Integrated EHCM, BIIS, and USA Staffing with secure workflows.</li>
+                            <li>Met SLA commitments with patching, updates, and support readiness.</li>
+                        </ul>
+                    </div>
+                    <div class="project-value">Contract Value: $528,720 (FFP)</div>
                 </div>
-                <div class="project-details">
-                    <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 12639523C0023 | <strong>Period:</strong> 01/2023-01/2026
-                </div>
-                <div class="project-details">
-                    Program management for mission-critical plant health information systems supporting 10,000+ stakeholders. Implemented Agile Scrum methodologies with regular sprint reviews and retrospectives. Managed Azure DevOps pipelines for automated builds and deployments. Coordinated Configuration Control Board activities ensuring stakeholder alignment. Provided comprehensive project tracking, risk management, and financial oversight. Maintained detailed schedules with timely stakeholder updates. Migrated product backlogs from JIRA to Azure DevOps achieving significant cost savings.
-                </div>
-                <div class="project-value">Contract Value: $3,432,840 (FFP)</div>
-            </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title">HHS IHS ServiceNow Development & Support</div>
-                    <span class="project-agency">HHS</span>
+                <div class="project">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-title">HHS IHS ServiceNow Development & Support</div>
+                            <span class="project-agency">HHS</span>
+                        </div>
+                        <div class="project-details">
+                            <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 75P00123C00053 | <strong>Period:</strong> 09/2023-09/2028
+                        </div>
+                        <ul class="project-highlights">
+                            <li>Executed Agile HRSD enhancements through consistent sprint cadence.</li>
+                            <li>Maintained weekly risk, velocity, and status reporting discipline.</li>
+                            <li>Aligned backlog and design activities with HHS EPLC standards.</li>
+                        </ul>
+                    </div>
+                    <div class="project-value">Contract Value: $1,914,380 (Hybrid FFP/T&M)</div>
                 </div>
-                <div class="project-details">
-                    <strong>Role:</strong> Prime Contractor | <strong>Contract:</strong> 75P00123C00053 | <strong>Period:</strong> 09/2023-09/2028
-                </div>
-                <div class="project-details">
-                    Executed Agile development for ServiceNow HRSD module enhancement with consistent 2-week sprints. Managed project coordination through regular status meetings with OAPS PM, IHS PM, and COR. Conducted kick-off meetings, developed risk logs, and provided weekly updates. Delivered sprint demonstrations and product feature showcases. Maintained comprehensive progress reports including risk mitigation strategies, burndown charts, and velocity metrics. Provided requirements analysis, product backlog refinement, and solution design aligned with HHS EPLC standards.
-                </div>
-                <div class="project-value">Contract Value: $1,914,380 (Hybrid FFP/T&M)</div>
             </div>
         </div>
 
